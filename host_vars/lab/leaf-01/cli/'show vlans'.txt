@@ -1,0 +1,36 @@
+
+
+Routing instance        VLAN name             Tag          Interfaces
+default-switch          sriov_1001            1001     
+                                                           ae0.0*
+                                                           ae1.0*
+                                                           esi.1763*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*
+default-switch          sriov_1002            1002     
+                                                           esi.1762*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*
+                                                           xe-0/0/2.0*
+default-switch          storage_access        301      
+                                                           ae0.0*
+                                                           ae1.0*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*
+default-switch          storage_replication   302      
+                                                           ae0.0*
+                                                           ae1.0*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*
+default-switch          vrouter_transport     300      
+                                                           ae0.0*
+                                                           ae1.0*
+                                                           esi.1760*
+                                                           esi.1778*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*

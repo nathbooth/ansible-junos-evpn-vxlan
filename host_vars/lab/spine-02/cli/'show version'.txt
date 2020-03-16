@@ -1,0 +1,19 @@
+
+fpc0:
+--------------------------------------------------------------------------
+Hostname: spine-02
+Model: vqfx-10000
+Junos: 18.4R1.8 limited
+JUNOS Base OS boot [18.4R1.8]
+JUNOS Base OS Software Suite [18.4R1.8]
+JUNOS Crypto Software Suite [18.4R1.8]
+JUNOS Online Documentation [18.4R1.8]
+JUNOS Kernel Software Suite [18.4R1.8]
+JUNOS Packet Forwarding Engine Support (qfx-10-f) [18.4R1.8]
+JUNOS Routing Software Suite [18.4R1.8]
+JUNOS jsd [i386-18.4R1.8-jet-1]
+JUNOS SDN Software Suite [18.4R1.8]
+JUNOS Enterprise Software Suite [18.4R1.8]
+JUNOS Web Management [18.4R1.8]
+JUNOS py-base-i386 [18.4R1.8]
+JUNOS py-extensions-i386 [18.4R1.8]

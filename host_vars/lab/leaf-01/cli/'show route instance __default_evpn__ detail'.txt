@@ -1,0 +1,10 @@
+
+__default_evpn__:
+  Router ID: 0.0.0.0
+  Type: non-forwarding evpn State: Active        
+  Route-distinguisher: 172.1.1.5:0
+  Vrf-import: [ __vrf-import-__default_evpn__-internal__ ]
+  Vrf-import-target: [ es-import-target:1-11-12-27-0-0 ]
+  Fast-reroute-priority: low
+  Tables:
+    __default_evpn__.evpn.0: 8 routes (6 active, 0 holddown, 0 hidden)

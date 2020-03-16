@@ -1,0 +1,97 @@
+
+Autonomous system number: 65050
+Router ID: 172.1.1.1
+
+inet.0: 18 destinations, 29 routes (18 active, 0 holddown, 0 hidden)
+              Direct:      7 routes,      7 active
+               Local:      6 routes,      6 active
+                 BGP:     16 routes,      5 active
+
+inet.3: 2 destinations, 4 routes (2 active, 0 holddown, 0 hidden)
+              Static:      1 routes,      1 active
+              Tunnel:      3 routes,      1 active
+
+vrf_nc_commm_mgmt.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+              Direct:      1 routes,      1 active
+               Local:      3 routes,      3 active
+                 BGP:      4 routes,      0 active
+           Aggregate:      1 routes,      1 active
+                EVPN:      3 routes,      3 active
+
+vrf_nc_commm_test.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+              Direct:      1 routes,      1 active
+               Local:      3 routes,      3 active
+                 BGP:      4 routes,      0 active
+           Aggregate:      1 routes,      1 active
+                EVPN:      3 routes,      3 active
+
+vrf_sriov_1001.inet.0: 14 destinations, 22 routes (12 active, 0 holddown, 3 hidden)
+              Direct:      2 routes,      2 active
+               Local:      5 routes,      5 active
+                 BGP:      6 routes,      1 active
+           Aggregate:      3 routes,      0 active
+                EVPN:      6 routes,      4 active
+
+vrf_sriov_1002.inet.0: 11 destinations, 13 routes (11 active, 0 holddown, 0 hidden)
+              Direct:      2 routes,      2 active
+               Local:      5 routes,      5 active
+                 BGP:      2 routes,      0 active
+           Aggregate:      1 routes,      1 active
+                EVPN:      3 routes,      3 active
+
+vrf_sriov_1003.inet.0: 1 destinations, 1 routes (0 active, 0 holddown, 1 hidden)
+           Aggregate:      1 routes,      0 active
+
+:vxlan.inet.0: 16 destinations, 16 routes (16 active, 0 holddown, 0 hidden)
+              Direct:      7 routes,      7 active
+               Local:      6 routes,      6 active
+              Static:      3 routes,      3 active
+
+mpls.0: 10 destinations, 10 routes (10 active, 0 holddown, 0 hidden)
+                MPLS:      6 routes,      6 active
+                 VPN:      4 routes,      4 active
+
+bgp.l3vpn.0: 35 destinations, 35 routes (35 active, 0 holddown, 0 hidden)
+              Direct:      6 routes,      6 active
+               Local:      8 routes,      8 active
+                 BGP:     14 routes,     14 active
+           Aggregate:      3 routes,      3 active
+                EVPN:      4 routes,      4 active
+
+inet6.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+              Direct:      1 routes,      1 active
+               INET6:      1 routes,      1 active
+
+vrf_nc_commm_mgmt.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+               INET6:      1 routes,      1 active
+
+vrf_nc_commm_test.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+               INET6:      1 routes,      1 active
+
+vrf_sriov_1001.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+               INET6:      1 routes,      1 active
+
+vrf_sriov_1002.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+               INET6:      1 routes,      1 active
+
+bgp.rtarget.0: 5 destinations, 5 routes (5 active, 0 holddown, 0 hidden)
+             RTarget:      5 routes,      5 active
+
+bgp.evpn.0: 71 destinations, 71 routes (71 active, 0 holddown, 0 hidden)
+                 BGP:     53 routes,     53 active
+                EVPN:     18 routes,     18 active
+
+vrf_sriov_1001.evpn.0: 23 destinations, 23 routes (23 active, 0 holddown, 0 hidden)
+                 BGP:     15 routes,     15 active
+                EVPN:      8 routes,      8 active
+
+vrf_sriov_1002.evpn.0: 9 destinations, 9 routes (9 active, 0 holddown, 0 hidden)
+                 BGP:      1 routes,      1 active
+                EVPN:      8 routes,      8 active
+
+default-switch.evpn.0: 36 destinations, 36 routes (36 active, 0 holddown, 0 hidden)
+                 BGP:     26 routes,     26 active
+                EVPN:     10 routes,     10 active
+
+__default_evpn__.evpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+                EVPN:      2 routes,      2 active

@@ -1,0 +1,4 @@
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                52831304375       QFX3500

@@ -1,0 +1,1089 @@
+
+
+inet.0: 18 destinations, 29 routes (18 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+100.0.1.0/31       *[Direct/0] 1w4d 04:18:58
+                    >  via xe-0/0/0.0
+100.0.1.0/32       *[Local/0] 1w4d 04:18:58
+                       Local via xe-0/0/0.0
+100.0.1.2/31       *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/1.0
+100.0.1.2/32       *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/1.0
+100.0.1.4/31       *[Direct/0] 1w4d 21:16:22
+                    >  via xe-0/0/2.0
+100.0.1.4/32       *[Local/0] 1w4d 21:16:22
+                       Local via xe-0/0/2.0
+100.0.1.6/31       *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/3.0
+100.0.1.6/32       *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/3.0
+169.254.0.0/24     *[Direct/0] 2w2d 07:31:44
+                    >  via em1.0
+169.254.0.2/32     *[Local/0] 2w2d 07:31:44
+                       Local via em1.0
+172.1.1.1/32       *[Direct/0] 2w1d 06:05:27
+                    >  via lo0.0
+172.1.1.2/32       *[BGP/170] 1d 18:49:59, localpref 100, from 100.0.1.1
+                      AS path: 65001 I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+                    [BGP/170] 1d 18:49:59, localpref 100
+                      AS path: 65001 I, validation-state: unverified
+                    >  to 100.0.1.3 via xe-0/0/1.0
+172.1.1.5/32       *[BGP/170] 3d 05:44:15, localpref 100
+                      AS path: 65002 I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+                    [BGP/170] 03:56:28, localpref 100
+                      AS path: 65001 65002 I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                    [BGP/170] 03:56:28, localpref 100
+                      AS path: 65001 65002 I, validation-state: unverified
+                    >  to 100.0.1.3 via xe-0/0/1.0
+172.1.1.6/32       *[BGP/170] 15:09:12, localpref 100
+                      AS path: 65003 I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+                    [BGP/170] 15:09:12, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                    [BGP/170] 1d 09:04:31, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.3 via xe-0/0/1.0
+192.168.2.0/24     *[Direct/0] 2w2d 07:31:39
+                    >  via em0.0
+192.168.2.174/32   *[Local/0] 2w2d 07:31:39
+                       Local via em0.0
+192.168.254.100/32 *[BGP/170] 15:09:12, localpref 100
+                      AS path: 65002 I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+                       to 100.0.1.7 via xe-0/0/3.0
+                    [BGP/170] 15:09:12, localpref 100
+                      AS path: 65003 I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+                    [BGP/170] 03:57:02, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                    [BGP/170] 03:57:02, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.3 via xe-0/0/1.0
+192.168.254.101/32 *[BGP/170] 15:09:12, localpref 100
+                      AS path: 65002 I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+                       to 100.0.1.7 via xe-0/0/3.0
+                    [BGP/170] 15:09:12, localpref 100
+                      AS path: 65003 I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+                    [BGP/170] 03:57:02, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                    [BGP/170] 03:57:02, localpref 100
+                      AS path: 65001 65003 I, validation-state: unverified
+                    >  to 100.0.1.3 via xe-0/0/1.0
+
+inet.3: 2 destinations, 4 routes (2 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+172.1.1.2/32       *[Tunnel/300] 1d 18:49:59
+                       Tunnel Composite
+                    [Tunnel/305] 2w1d 06:05:27
+                       Tunnel
+192.168.254.0/24   *[Static/5] 2w1d 06:05:27
+                       Discard
+                    [Tunnel/305] 2w1d 06:05:27
+                       Tunnel
+
+vrf_nc_commm_mgmt.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+10.255.1.0/31      *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2005
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 60
+                       to 100.0.1.3 via xe-0/0/1.0, Push 60
+10.255.1.0/32      *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2005
+192.168.111.0/24   *[Aggregate/130] 6d 05:33:08
+                       Reject
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 60
+                       to 100.0.1.3 via xe-0/0/1.0, Push 60
+192.168.111.1/32   *[Local/0] 2w1d 06:04:33
+                       Local via irb.1001
+192.168.111.2/32   *[EVPN/7] 6d 05:32:51
+                    >  via irb.1001
+192.168.111.3/32   *[Local/0] 6d 05:33:13
+                       Local via irb.1001
+192.168.111.100/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.111.101/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+
+vrf_nc_commm_test.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+10.255.1.0/31      *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2004
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 61
+                       to 100.0.1.3 via xe-0/0/1.0, Push 61
+10.255.1.0/32      *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2004
+192.168.111.0/24   *[Aggregate/130] 6d 05:33:08
+                       Reject
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 61
+                       to 100.0.1.3 via xe-0/0/1.0, Push 61
+192.168.111.1/32   *[Local/0] 2w1d 06:04:33
+                       Local via irb.1001
+192.168.111.2/32   *[EVPN/7] 6d 05:32:51
+                    >  via irb.1001
+192.168.111.3/32   *[Local/0] 6d 05:33:13
+                       Local via irb.1001
+192.168.111.100/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.111.101/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+
+vrf_sriov_1001.inet.0: 14 destinations, 22 routes (12 active, 0 holddown, 3 hidden)
++ = Active Route, - = Last Active, * = Both
+
+10.255.1.0/31      *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2001
+                    [EVPN/170] 2w1d 06:04:34
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+10.255.1.0/32      *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2001
+192.168.111.0/24   *[Direct/0] 6d 05:33:13
+                    >  via irb.1001
+                    [EVPN/170] 2w1d 06:04:33
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+                    [BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.111.1/32   *[Local/0] 2w1d 06:04:33
+                       Local via irb.1001
+192.168.111.2/32   *[EVPN/7] 6d 05:32:51
+                    >  via irb.1001
+192.168.111.3/32   *[Local/0] 6d 05:33:13
+                       Local via irb.1001
+192.168.111.100/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.111.101/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.112.0/24   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 62
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.112.1/32   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+192.168.112.3/32   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+192.168.113.0/24   *[EVPN/170] 2w1d 06:04:34
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+                    [BGP/170] 00:00:20, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 62
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 62
+
+vrf_sriov_1002.inet.0: 11 destinations, 13 routes (11 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+10.255.1.0/31      *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2002
+10.255.1.0/32      *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2002
+192.168.111.0/24   *[Aggregate/130] 6d 05:33:08
+                       Reject
+192.168.111.1/32   *[Local/0] 2w1d 06:04:33
+                       Local via irb.1001
+192.168.111.2/32   *[EVPN/7] 6d 05:32:51
+                    >  via irb.1001
+192.168.111.3/32   *[Local/0] 6d 05:33:13
+                       Local via irb.1001
+192.168.111.100/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.111.101/32 *[EVPN/7] 15:09:12
+                    >  via irb.1001
+                    [BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+192.168.112.0/24   *[Direct/0] 6d 05:33:07
+                    >  via irb.1002
+192.168.112.1/32   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+192.168.112.3/32   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+
+vrf_sriov_1003.inet.0: 1 destinations, 1 routes (0 active, 0 holddown, 1 hidden)
+
+:vxlan.inet.0: 16 destinations, 16 routes (16 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+100.0.1.0/31       *[Direct/0] 1w4d 04:18:58
+                    >  via xe-0/0/0.0
+100.0.1.0/32       *[Local/0] 1w4d 04:18:58
+                       Local via xe-0/0/0.0
+100.0.1.2/31       *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/1.0
+100.0.1.2/32       *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/1.0
+100.0.1.4/31       *[Direct/0] 1w4d 21:16:22
+                    >  via xe-0/0/2.0
+100.0.1.4/32       *[Local/0] 1w4d 21:16:22
+                       Local via xe-0/0/2.0
+100.0.1.6/31       *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/3.0
+100.0.1.6/32       *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/3.0
+169.254.0.0/24     *[Direct/0] 2w1d 06:05:27
+                    >  via em1.0
+169.254.0.2/32     *[Local/0] 2w1d 06:05:27
+                       Local via em1.0
+172.1.1.1/32       *[Direct/0] 2w1d 06:05:27
+                    >  via lo0.0
+172.1.1.2/32       *[Static/1] 2w1d 06:04:33, metric2 0
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+172.1.1.5/32       *[Static/1] 6d 05:33:08, metric2 0
+                    >  to 100.0.1.5 via xe-0/0/2.0
+172.1.1.6/32       *[Static/1] 6d 05:33:08, metric2 0
+                    >  to 100.0.1.7 via xe-0/0/3.0
+192.168.2.0/24     *[Direct/0] 2w1d 06:05:27
+                    >  via em0.0
+192.168.2.174/32   *[Local/0] 6d 05:33:13
+                       Local via em0.0
+
+mpls.0: 10 destinations, 10 routes (10 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+0                  *[MPLS/0] 2w1d 06:05:27, metric 1
+                       to table inet.0
+0(S=0)             *[MPLS/0] 2w1d 06:05:27, metric 1
+                       to table mpls.0
+1                  *[MPLS/0] 2w1d 06:05:27, metric 1
+                       Receive
+2                  *[MPLS/0] 2w1d 06:05:27, metric 1
+                       to table inet6.0
+2(S=0)             *[MPLS/0] 2w1d 06:05:27, metric 1
+                       to table mpls.0
+13                 *[MPLS/0] 2w1d 06:05:27, metric 1
+                       Receive
+60                 *[VPN/0] 2w1d 06:05:26
+                    >  via lsi.768 (vrf_nc_commm_mgmt), Pop      
+61                 *[VPN/0] 2w1d 06:05:27
+                    >  via lsi.769 (vrf_nc_commm_test), Pop      
+62                 *[VPN/0] 2w1d 06:05:27
+                    >  via lsi.770 (vrf_sriov_1001), Pop      
+63                 *[VPN/0] 2w1d 06:05:27
+                    >  via lsi.771 (vrf_sriov_1002), Pop      
+
+bgp.l3vpn.0: 35 destinations, 35 routes (35 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+172.1.1.1:2004:10.255.1.0/31                
+                   *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2004
+172.1.1.1:2004:10.255.1.0/32                
+                   *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2004
+172.1.1.1:2004:192.168.111.0/24                
+                   *[Aggregate/130] 6d 05:33:08
+                       Reject
+172.1.1.1:2005:10.255.1.0/31                
+                   *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2005
+172.1.1.1:2005:10.255.1.0/32                
+                   *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2005
+172.1.1.1:2005:192.168.111.0/24                
+                   *[Aggregate/130] 6d 05:33:08
+                       Reject
+172.1.1.1:1001:10.255.1.0/31                
+                   *[Direct/0] 2w1d 06:05:27
+                    >  via xe-0/0/4.2001
+172.1.1.1:1001:10.255.1.0/32                
+                   *[Local/0] 2w1d 06:05:27
+                       Local via xe-0/0/4.2001
+172.1.1.1:1001:192.168.111.0/24                
+                   *[Direct/0] 6d 05:33:13
+                    >  via irb.1001
+172.1.1.1:1001:192.168.111.1/32                
+                   *[Local/0] 2w1d 06:04:33
+                       Local via irb.1001
+172.1.1.1:1001:192.168.111.2/32                
+                   *[EVPN/7] 6d 05:32:51
+                    >  via irb.1001
+172.1.1.1:1001:192.168.111.3/32                
+                   *[Local/0] 6d 05:33:13
+                       Local via irb.1001
+172.1.1.1:1001:192.168.111.100/32                
+                   *[EVPN/7] 15:09:12
+                    >  via irb.1001
+172.1.1.1:1001:192.168.111.101/32                
+                   *[EVPN/7] 15:09:12
+                    >  via irb.1001
+172.1.1.1:1001:192.168.113.0/24                
+                   *[EVPN/170] 2w1d 06:04:34
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+172.1.1.1:1002:10.255.1.0/31                
+                   *[Direct/0] 2w1d 06:05:26
+                    >  via xe-0/0/4.2002
+172.1.1.1:1002:10.255.1.0/32                
+                   *[Local/0] 2w1d 06:05:26
+                       Local via xe-0/0/4.2002
+172.1.1.1:1002:192.168.111.0/24                
+                   *[Aggregate/130] 6d 05:33:08
+                       Reject
+172.1.1.1:1002:192.168.112.0/24                
+                   *[Direct/0] 6d 05:33:07
+                    >  via irb.1002
+172.1.1.1:1002:192.168.112.1/32                
+                   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+172.1.1.1:1002:192.168.112.3/32                
+                   *[Local/0] 6d 05:33:07
+                       Local via irb.1002
+172.1.1.2:2004:10.255.1.0/31                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 61
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 61
+172.1.1.2:2004:192.168.111.0/24                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 61
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 61
+172.1.1.2:2005:10.255.1.0/31                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 60
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 60
+172.1.1.2:2005:192.168.111.0/24                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 60
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 60
+172.1.1.2:1001:10.255.1.0/31                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1001:192.168.111.0/24                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1001:192.168.111.100/32                
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1001:192.168.111.101/32                
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0, Push 62
+                       to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1001:192.168.112.0/24                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 62
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1001:192.168.113.0/24                
+                   *[BGP/170] 00:00:20, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0, Push 62
+                    >  to 100.0.1.3 via xe-0/0/1.0, Push 62
+172.1.1.2:1003:10.255.1.0/31                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+172.1.1.2:1003:192.168.111.0/24                
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+172.1.1.2:1003:192.168.113.0/24                
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+172.1.1.2:1003:192.168.113.10/32                
+                   *[BGP/170] 00:00:20, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+
+inet6.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+fe80::205:860f:fc71:4c00/128
+                   *[Direct/0] 2w2d 07:31:39
+                    >  via lo0.0
+ff02::2/128        *[INET6/0] 2w2d 07:31:44
+                       MultiRecv
+
+vrf_nc_commm_mgmt.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 2w1d 06:05:27
+                       MultiRecv
+
+vrf_nc_commm_test.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 2w1d 06:05:27
+                       MultiRecv
+
+vrf_sriov_1001.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 2w1d 06:05:27
+                       MultiRecv
+
+vrf_sriov_1002.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 2w1d 06:05:27
+                       MultiRecv
+
+bgp.rtarget.0: 5 destinations, 5 routes (5 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+65050:9999:9999/96                
+                   *[RTarget/5] 6d 05:33:13
+                      Type Default
+                       Local
+65050:65050:1001/96                
+                   *[RTarget/5] 6d 05:33:13
+                      Type Default
+                       Local
+65050:65050:1002/96                
+                   *[RTarget/5] 6d 05:33:13
+                      Type Default
+                       Local
+65050:65050:2004/96                
+                   *[RTarget/5] 6d 05:33:13
+                      Type Default
+                       Local
+65050:65050:2005/96                
+                   *[RTarget/5] 6d 05:33:13
+                      Type Default
+                       Local
+
+bgp.evpn.0: 71 destinations, 71 routes (71 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1:172.1.1.1:0::050000fe1a000003e900::FFFF:FFFF/192 AD/ESI        
+                   *[EVPN/170] 2w1d 06:04:33
+                       Indirect
+1:172.1.1.1:0::050000fe1a000003ea00::FFFF:FFFF/192 AD/ESI        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+1:172.1.1.2:0::050000fe1a000003e900::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 2w1d 06:04:32, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+1:172.1.1.2:0::050000fe1a000003eb00::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:32:45, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+1:172.1.1.5:0::011112270000000001::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:0::011112270000000002::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:5::011112270000000001::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:5::011112270000000002::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.6:0::011112270000000001::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:0::011112270000000002::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:6::011112270000000001::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:6::011112270000000002::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1003::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1003::02:05:86:71:1d:00/304 MAC/IP        
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.5:5::300::8e:ad:8e:93:d5:5d/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+2:172.1.1.5:5::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:12:53, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+2:172.1.1.6:6::300::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::300::8e:ad:8e:93:d5:5d/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1003::de:98:8d:d6:7e:47/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00::192.168.111.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:12
+                       Indirect
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0::192.168.112.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00::192.168.112.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00::192.168.111.2/304 MAC/IP        
+                   *[BGP/170] 6d 05:32:51, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1003::00:a0:a0:a0:00:a0::192.168.113.1/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1003::02:05:86:71:1d:00::192.168.113.2/304 MAC/IP        
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.5:5::300::8e:ad:8e:93:d5:5d::192.168.254.101/304 MAC/IP        
+                   *[BGP/170] 00:00:43, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+2:172.1.1.6:6::300::66:4d:f4:88:b5:fc::192.168.254.100/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::300::8e:ad:8e:93:d5:5d::192.168.254.101/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc::192.168.111.100/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d::192.168.111.101/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1003::de:98:8d:d6:7e:47::192.168.113.10/304 MAC/IP        
+                   *[BGP/170] 00:00:20, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.1:1::1001::172.1.1.1/248 IM            
+                   *[EVPN/170] 2w1d 06:04:31
+                       Indirect
+3:172.1.1.1:1::1002::172.1.1.1/248 IM            
+                   *[EVPN/170] 6d 05:33:06
+                       Indirect
+3:172.1.1.2:2::1001::172.1.1.2/248 IM            
+                   *[BGP/170] 2w1d 06:04:31, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+3:172.1.1.2:2::1003::172.1.1.2/248 IM            
+                   *[BGP/170] 6d 05:32:45, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+3:172.1.1.5:5::300::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.5:5::301::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.5:5::302::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.5:5::1001::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.5:5::1002::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.6:6::300::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.6:6::301::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.6:6::302::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.6:6::1001::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.6:6::1003::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+4:172.1.1.5:0::011112270000000001:172.1.1.5/296 ES            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+4:172.1.1.5:0::011112270000000002:172.1.1.5/296 ES            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+4:172.1.1.6:0::011112270000000001:172.1.1.6/296 ES            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+4:172.1.1.6:0::011112270000000002:172.1.1.6/296 ES            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+5:172.1.1.1:1001::0::192.168.111.0::24/248               
+                   *[EVPN/170] 2w1d 06:04:33
+                       Indirect
+5:172.1.1.1:1001::0::192.168.112.0::24/248               
+                   *[EVPN/170] 1w4d 21:29:09
+                       Indirect
+5:172.1.1.1:1001::0::10.255.1.0::31/248               
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+5:172.1.1.1:1002::0::192.168.111.0::24/248               
+                   *[EVPN/170] 6d 05:33:08
+                       Indirect
+5:172.1.1.1:1002::0::192.168.112.0::24/248               
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+5:172.1.1.1:1002::0::10.255.1.0::31/248               
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+5:172.1.1.2:1001::0::192.168.111.0::24/248               
+                   *[BGP/170] 2w1d 06:04:33, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::192.168.113.0::24/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::10.255.1.0::31/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1003::0::192.168.111.0::24/248               
+                   *[BGP/170] 2w1d 06:04:32, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1003::0::192.168.113.0::24/248               
+                   *[BGP/170] 6d 05:32:46, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1003::0::10.255.1.0::31/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+
+vrf_sriov_1001.evpn.0: 23 destinations, 23 routes (23 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.5:5::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:12:53, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00::192.168.111.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:12
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00::192.168.111.2/304 MAC/IP        
+                   *[BGP/170] 6d 05:32:51, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc::192.168.111.100/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d::192.168.111.101/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.1:1::1001::172.1.1.1/248 IM            
+                   *[EVPN/170] 2w1d 06:04:31
+                       Indirect
+3:172.1.1.2:2::1001::172.1.1.2/248 IM            
+                   *[BGP/170] 2w1d 06:04:31, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+3:172.1.1.5:5::1001::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.6:6::1001::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+5:172.1.1.1:1001::0::192.168.111.0::24/248               
+                   *[EVPN/170] 2w1d 06:04:33
+                       Indirect
+5:172.1.1.1:1001::0::192.168.112.0::24/248               
+                   *[EVPN/170] 1w4d 21:29:09
+                       Indirect
+5:172.1.1.1:1001::0::10.255.1.0::31/248               
+                   *[EVPN/170] 2w1d 06:05:27
+                       Indirect
+5:172.1.1.2:1001::0::192.168.111.0::24/248               
+                   *[BGP/170] 2w1d 06:04:33, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::192.168.113.0::24/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::10.255.1.0::31/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+
+vrf_sriov_1002.evpn.0: 9 destinations, 9 routes (9 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0::192.168.112.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00::192.168.112.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+3:172.1.1.1:1::1002::172.1.1.1/248 IM            
+                   *[EVPN/170] 6d 05:33:06
+                       Indirect
+3:172.1.1.5:5::1002::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+5:172.1.1.1:1002::0::192.168.111.0::24/248               
+                   *[EVPN/170] 6d 05:33:08
+                       Indirect
+5:172.1.1.1:1002::0::192.168.112.0::24/248               
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+5:172.1.1.1:1002::0::10.255.1.0::31/248               
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+
+default-switch.evpn.0: 36 destinations, 36 routes (36 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1:172.1.1.2:0::050000fe1a000003e900::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 2w1d 06:04:32, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+1:172.1.1.2:0::050000fe1a000003eb00::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:32:45, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+1:172.1.1.5:0::011112270000000001::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:0::011112270000000002::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:5::011112270000000001::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.5:5::011112270000000002::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+1:172.1.1.6:0::011112270000000001::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:0::011112270000000002::FFFF:FFFF/192 AD/ESI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:6::011112270000000001::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+1:172.1.1.6:6::011112270000000002::0/192 AD/EVI        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.5:5::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:12:53, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.1:1::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1001::02:05:86:71:4c:00::192.168.111.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:12
+                       Indirect
+2:172.1.1.1:1::1002::00:a0:a0:a0:00:a0::192.168.112.1/304 MAC/IP        
+                   *[EVPN/170] 2w1d 06:05:26
+                       Indirect
+2:172.1.1.1:1::1002::02:05:86:71:4c:00::192.168.112.3/304 MAC/IP        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect
+2:172.1.1.2:2::1001::00:a0:a0:a0:00:a0::192.168.111.1/304 MAC/IP        
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.2:2::1001::02:05:86:71:1d:00::192.168.111.2/304 MAC/IP        
+                   *[BGP/170] 6d 05:32:51, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+2:172.1.1.6:6::1001::66:4d:f4:88:b5:fc::192.168.111.100/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+2:172.1.1.6:6::1001::8e:ad:8e:93:d5:5d::192.168.111.101/304 MAC/IP        
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+3:172.1.1.1:1::1001::172.1.1.1/248 IM            
+                   *[EVPN/170] 2w1d 06:04:31
+                       Indirect
+3:172.1.1.1:1::1002::172.1.1.1/248 IM            
+                   *[EVPN/170] 6d 05:33:06
+                       Indirect
+3:172.1.1.2:2::1001::172.1.1.2/248 IM            
+                   *[BGP/170] 2w1d 06:04:31, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+3:172.1.1.5:5::1001::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.5:5::1002::172.1.1.5/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.5
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.5 via xe-0/0/2.0
+3:172.1.1.6:6::1001::172.1.1.6/248 IM            
+                   *[BGP/170] 6d 05:33:08, localpref 100, from 172.1.1.6
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.7 via xe-0/0/3.0
+5:172.1.1.2:1001::0::192.168.111.0::24/248               
+                   *[BGP/170] 2w1d 06:04:33, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::192.168.113.0::24/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                    >  to 100.0.1.1 via xe-0/0/0.0
+                       to 100.0.1.3 via xe-0/0/1.0
+5:172.1.1.2:1001::0::10.255.1.0::31/248               
+                   *[BGP/170] 2w1d 06:04:34, localpref 100, from 172.1.1.2
+                      AS path: I, validation-state: unverified
+                       to 100.0.1.1 via xe-0/0/0.0
+                    >  to 100.0.1.3 via xe-0/0/1.0
+
+__default_evpn__.evpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1:172.1.1.1:0::050000fe1a000003e900::FFFF:FFFF/192 AD/ESI        
+                   *[EVPN/170] 2w1d 06:04:33
+                       Indirect
+1:172.1.1.1:0::050000fe1a000003ea00::FFFF:FFFF/192 AD/ESI        
+                   *[EVPN/170] 6d 05:33:07
+                       Indirect

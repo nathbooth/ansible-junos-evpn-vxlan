@@ -1,0 +1,21 @@
+
+Threading mode: BGP I/O
+Groups: 2 Peers: 4 Down peers: 0
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+bgp.evpn.0           
+                      82         41          0          0          0          0
+inet.0               
+                       8          4          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+100.0.1.6             65000       1991       2002       0      21    15:09:00 Establ
+  inet.0: 2/5/3/0
+100.0.1.10            65001       4344       4365       0      29  1d 9:04:19 Establ
+  inet.0: 2/3/3/0
+172.1.1.1             65050      93319      92188       0       0 2w1d 6:04:41 Establ
+  __default_evpn__.evpn.0: 2/2/2/0
+  bgp.evpn.0: 23/41/41/0
+  default-switch.evpn.0: 21/39/39/0
+172.1.1.2             65050     136503      92189       0       0 2w1d 6:04:41 Establ
+  __default_evpn__.evpn.0: 0/2/2/0
+  bgp.evpn.0: 18/41/41/0
+  default-switch.evpn.0: 18/39/39/0

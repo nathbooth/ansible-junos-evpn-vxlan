@@ -1,0 +1,4 @@
+
+Local Interface    Parent Interface    Chassis Id          Port info          System Name
+xe-0/0/1           -                   02:05:86:71:1d:00    * to leaf-01      spine-02            
+xe-0/0/0           -                   02:05:86:71:4c:00    * to leaf-01      spine-01            

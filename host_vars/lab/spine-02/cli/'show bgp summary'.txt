@@ -1,0 +1,50 @@
+
+Threading mode: BGP I/O
+Groups: 8 Peers: 13 Down peers: 6
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+bgp.rtarget.0        
+                       0          0          0          0          0          0
+bgp.evpn.0           
+                      53         53          0          0          0          0
+bgp.l3vpn.0          
+                      13         13          0          0          0          0
+bgp.l3vpn-inet6.0    
+                       0          0          0          0          0          0
+inet.0               
+                      16          8          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+10.255.1.1            54321          0          0       0       0 2w1d 6:05:18 Active
+10.255.1.1            54321          0          0       0       0 2w1d 6:05:18 Active
+10.255.1.1            54321          0          0       0       0 2w1d 6:05:18 Connect
+10.255.1.1            54321          0          0       0       0 2w1d 6:05:18 Connect
+100.0.1.0             65000       5793       5808       0      14 1d 20:09:51 Establ
+  inet.0: 1/5/5/0
+100.0.1.2             65000       5618       5633       0      12 1d 18:49:47 Establ
+  inet.0: 1/5/5/0
+100.0.1.9             65002        522        521       0       8     3:56:15 Establ
+  inet.0: 3/3/3/0
+100.0.1.11            65003       4365       4342       0      29  1d 9:04:19 Establ
+  inet.0: 3/3/3/0
+172.1.1.1             65050     137638     245644       0       0 2w1d 6:04:25 Establ
+  __default_evpn__.evpn.0: 0/0/0/0
+  bgp.evpn.0: 18/18/18/0
+  bgp.l3vpn.0: 13/13/13/0
+  default-switch.evpn.0: 10/10/10/0
+  vrf_nc_commm_mgmt.inet.0: 0/5/5/0
+  vrf_nc_commm_test.inet.0: 0/5/5/0
+  vrf_sriov_1001.evpn.0: 8/8/8/0
+  vrf_sriov_1001.inet.0: 0/6/6/0
+  vrf_sriov_1003.inet.0: 0/3/3/0
+172.1.1.5             65050      92953     135667       0       0 2w1d 6:04:41 Establ
+  __default_evpn__.evpn.0: 0/0/0/0
+  bgp.evpn.0: 14/14/14/0
+  default-switch.evpn.0: 6/6/6/0
+  vrf_sriov_1001.evpn.0: 2/2/2/0
+172.1.1.6             65050      92190     136503       0       0 2w1d 6:04:41 Establ
+  __default_evpn__.evpn.0: 0/0/0/0
+  bgp.evpn.0: 21/21/21/0
+  default-switch.evpn.0: 12/12/12/0
+  vrf_sriov_1001.evpn.0: 5/5/5/0
+  vrf_sriov_1003.evpn.0: 3/3/3/0
+192.168.254.12        65050          0          0       0       0 2w1d 6:05:18 Active
+192.168.254.13        65050          0          0       0       0  6d 5:32:41 Active

@@ -1,0 +1,12 @@
+
+
+Routing instance        VLAN name             Tag          Interfaces
+default-switch          sriov_1001            1001     
+                                                           esi.1820*
+                                                           esi.1848*
+                                                           esi.1856*
+                                                           vtep.32769*
+                                                           vtep.32770*
+                                                           vtep.32771*
+default-switch          sriov_1002            1002     
+                                                           vtep.32771*

@@ -1,0 +1,43 @@
+
+Physical interface: vtep, Enabled, Physical link is Up
+  Interface index: 641, SNMP ifIndex: 517
+  Type: Software-Pseudo, Link-level type: VxLAN-Tunnel-Endpoint, MTU: Unlimited,
+  Speed: Unlimited
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface vtep.32768 (Index 571) (SNMP ifIndex 552)
+    Flags: Up SNMP-Traps 0x4000 Encapsulation: ENET2
+    Ethernet segment value: 00:00:00:00:00:00:00:00:00:00, Mode: single-homed,
+    Multi-homed status: Forwarding
+    VXLAN Endpoint Type: Source, VXLAN Endpoint Address: 172.1.1.6, L2 Routing Instance: default-switch, L3 Routing Instance: default
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface vtep.32769 (Index 570) (SNMP ifIndex 553)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    VXLAN Endpoint Type: Remote, VXLAN Endpoint Address: 172.1.1.2, L2 Routing Instance: default-switch, L3 Routing Instance: default
+    Input packets : 937728
+    Output packets: 971677
+    Protocol eth-switch, MTU: Unlimited
+      Flags: Trunk-Mode
+
+  Logical interface vtep.32770 (Index 572) (SNMP ifIndex 554)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    VXLAN Endpoint Type: Remote, VXLAN Endpoint Address: 172.1.1.1, L2 Routing Instance: default-switch, L3 Routing Instance: default
+    Input packets : 44
+    Output packets: 44
+    Protocol eth-switch, MTU: Unlimited
+      Flags: Trunk-Mode
+
+  Logical interface vtep.32771 (Index 573) (SNMP ifIndex 555)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    VXLAN Endpoint Type: Remote, VXLAN Endpoint Address: 172.1.1.5, L2 Routing Instance: default-switch, L3 Routing Instance: default
+    Input packets : 0
+    Output packets: 24
+    Protocol eth-switch, MTU: Unlimited
+      Flags: Trunk-Mode
