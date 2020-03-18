@@ -1,6 +1,10 @@
-This role will generate variables required to generate overlay MP-iBGP config and veriables required for verfication of VTEPs
-Input files for this role are:-
+This role will be executed across all the hosts listed in $PWD/inventory/{{site}}/hosts.yml
 
+This role will generate variables required for following purposes:-
+- To generate  MP-iBGP config for bgp groups (overlay; contrail & overlay-rr) 
+- To verify status of VTEPs
+
+Input files for this role are:-
 - $PWD/inventory/{{site}}/hosts.yml
 - $PWD/inventory/{{site}}/group_vars/all/network.yaml
 
