@@ -2,9 +2,9 @@ This role will be executed across all the hosts listed in $PWD/inventory/{{site}
 
 This role will generate following config stanzas:-
 - bgp group "overlay" for all leaf and spine devices
-- bgp group "overlay-rr" and contrail for spine devices only
+- bgp group "overlay-rr" and "contrail" for spine devices only
 - Dynamic tunnels (MPLSoUDP) for spine devices only 
-- Routing polices "nhs" & "pol-set-udp-encaps"
+- Routing polices "nhs" & "pol-set-udp-encaps" for spine devices only
 - Enabling family mpls on spine to spine and spine to leaf interfaces 
 - Adding static route in inet.3 rib
 
