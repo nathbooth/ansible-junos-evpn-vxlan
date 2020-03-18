@@ -1,7 +1,0 @@
-ansible==2.8.6
-setuptools
-junos-eznc
-jinja2==2.10.3
-netaddr
-ncclient
-
