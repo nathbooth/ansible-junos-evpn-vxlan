@@ -1,6 +1,6 @@
 
 galaxy_info:
-  author: Damien Garros
+  author: Kashif Nawaz
   company: Juniper Networks
   min_ansible_version: 1.9
   categories:
