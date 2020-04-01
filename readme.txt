@@ -32,6 +32,7 @@ Executing a specific role:
 Parameters to be passed:
 -->rolename (name of role to be executed)
 
+
 ansible-playbook generate_ip_fabric.yml -e "rolename=generate-overlay-vars" -i inventory/lab/hosts.yml -e "site=lab"  #here lab is dummy site so please use your site code accordingly
                          OR
 ansible-playbook generate_ip_fabric.yml --extra-vars "rolename=generate-overlay-vars" -i inventory/lab/hosts.yml -e "site=lab" #here lab is dummy site so please use your site code accordingly
@@ -51,6 +52,10 @@ List of roles:
 - generate-assembled-configuration
 
 ######################################################################################################
+Dry run, it will push config , do "show | compare" rollback and then exit from the device:
+
+ansible-playbook final_config_push.yml -c -vvv -i inventory/lab/hosts.yml -e "site=lab" , # here lab is dummy site so please use your site code accordingly
+
 
 Pushing the generated configuration to all the hosts:
 ansible-playbook final_config_push.yml -vvv -i inventory/lab/hosts.yml -e "site=lab" , # here lab is dummy site so please use your site code accordingly
@@ -78,56 +83,55 @@ ansible-playbook -i inventory/lab/hosts.yml -e "site=lab" check_ip_fabric.yml, #
 
 check_ip_fabric.yml has following roles and plays 
 
-############################################################
   - name: check IP Fabric Interfaces Admin Status
     include_role:
       name: check-underlay-if
-############################################################
+
   - name: check ip reachability between underlay interfaces
     include_role:
       name: ping
-############################################################
+
   - name: check lldp for underlay interfaces
     include_role:
       name: check-lldp
-############################################################
+
   - name: check  IP Fabric ebgp & MP-iBGP
     include_role:
       name: check-bgp
-############################################################
+
   - name: check vtep interfaces
     include_role:
       name: check-vtep
-############################################################
+
   - name: check tenants vlans
     include_role:
       name: check-vlan
-###########################################################
+
 - name: check leaf to compute LACP Interfaces 
   hosts: leaf
   connection: local
   gather_facts: false
   roles:
   - check-lacp
-###########################################################
+
 - name: check spine-spine, spine-contrail MP-iBPG
   hosts: spine
   connection: local
   gather_facts: false
   roles:
   - check-spine-ibgp
-###########################################################
+################################################################################################
+
+to collcet Junos CLI output execute check_cli.yml play book and it includes following plays and roles
 - name: collect cli
   hosts: all
   connection: local
   gather_facts: false
   tasks:
-############################################################
   - name: inclued Juniper junos
     include_role:
       name: Juniper.junos
-############################################################
   - name: collect cli
     include_role:
       name: collect-commands
-############################################################  
+##############################################################################################
