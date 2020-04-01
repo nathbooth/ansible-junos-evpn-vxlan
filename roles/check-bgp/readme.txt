@@ -1,6 +1,6 @@
 This role be executed across all the hosts listed in $PWD/inventory/{{site}}/hosts.yml
 
-This role will verify if eBGP and MP-iBGP between spine and leaf switches is in establish state
+This role will verify if eBGP and MP-iBGP between spine and leaf switches are in establish state
 
 Input files for this role are:-
 
