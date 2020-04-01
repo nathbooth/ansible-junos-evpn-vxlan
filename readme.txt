@@ -52,9 +52,6 @@ List of roles:
 - generate-assembled-configuration
 
 ######################################################################################################
-Dry run, it will push config , do "show | compare" rollback and then exit from the device:
-
-ansible-playbook final_config_push.yml -c -vvv -i inventory/lab/hosts.yml -e "site=lab" , # here lab is dummy site so please use your site code accordingly
 
 
 Pushing the generated configuration to all the hosts:
