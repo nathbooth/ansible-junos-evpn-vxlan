@@ -1,4 +1,4 @@
-######################################################################################################
+##########################################################################################################################################################################
 
 Precondtions:
 python: Python 2.7.5
@@ -6,6 +6,10 @@ pip packages:
 ansible: 2.8.6
 Jinja2: 2.10.3
 Ansible user should be created and public keys should be configured on all devices
+Complete packages list is available in hostRequirements.txt 
+#############################################################################################################################################################################
+
+Design and use cases are covered in design.ppt
 ##############################################################################################################################################################################
 for multi-site support {{site}} is add at all required places , please make sure directory with actual site name or code is created under following directories
 
@@ -52,7 +56,8 @@ List of roles:
 - generate-assembled-configuration
 
 ######################################################################################################
-
+Dry run (push the config to Junos devices do show | compre ,rollback and the exit)
+ansible-playbook final_config_push.yml -vvv --check --diff -i inventory/lab/hosts.yml -e "site=lab" , # here lab is dummy site so please use your site code accordingly
 
 Pushing the generated configuration to all the hosts:
 ansible-playbook final_config_push.yml -vvv -i inventory/lab/hosts.yml -e "site=lab" , # here lab is dummy site so please use your site code accordingly
