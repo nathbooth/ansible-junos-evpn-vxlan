@@ -7,6 +7,12 @@
 ############################################################
   tasks:
 ############################################################
+  - name: create a site directory if its not present
+    run_once: true
+    file:
+      path: host_vars/{{site}}
+      state: directory
+############################################################
   - name: check if the host directory is present
     stat:
       path: host_vars/{{site}}/{{inventory_hostname}}/
