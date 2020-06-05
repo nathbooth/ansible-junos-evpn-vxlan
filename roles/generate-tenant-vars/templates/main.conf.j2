@@ -70,10 +70,18 @@ INFRA_NW:
      PHY_IF: {% for IF in INTF.phy_if %}{% if IF.parent==inventory_hostname %}{{IF.IFD}} {% endif %}{% endfor %}
 {% for IFD in north_if %} 
 {% if INTF.vlan_id == IFD.vlan_id %}
+{% if IFD.phy_if is defined %}{% for PARENT in IFD.phy_if %}{% if PARENT.parent==inventory_hostname %}
+     IP: {{PARENT.local_ip}}
+     NBR: {{PARENT.peer_ip | ipaddr('address')}}
+     LoCAL_AS: {{PARENT.local_as}}
+     PEER_AS: {{PARENT.peer_as}}
+{% endif %}{% endfor %}
+{% else %}
      IP: {{IFD.local_ip}}
      NBR: {{IFD.peer_ip | ipaddr('address')}}
      LoCAL_AS: {{IFD.local_as}}
      PEER_AS: {{IFD.peer_as}}
+{% endif %}
 {% if IFD.QOS is defined and IFD.QOS.code_point !=None %}
      QOS_REWRITE:
         RULE_NAME: {{IFD.QOS.name}}
@@ -115,10 +123,18 @@ INFRA_NW:
      PHY_IF: {% for IF in INTF.phy_if %}{% if IF.parent==inventory_hostname %}{{IF.IFD}} {% endif %}{% endfor %}
 {% for IFD in north_if %} 
 {% if INTF.vlan_id == IFD.vlan_id %}
+{% if IFD.phy_if is defined %}{% for PARENT in IFD.phy_if %}{% if PARENT.parent==inventory_hostname %}
+     IP: {{PARENT.local_ip}}
+     NBR: {{PARENT.peer_ip | ipaddr('address')}}
+     LoCAL_AS: {{PARENT.local_as}}
+     PEER_AS: {{PARENT.peer_as}}
+{% endif %}{% endfor %}
+{% else %}
      IP: {{IFD.local_ip}}
      NBR: {{IFD.peer_ip | ipaddr('address')}}
      LoCAL_AS: {{IFD.local_as}}
      PEER_AS: {{IFD.peer_as}}
+{% endif %}
 {% if IFD.QOS is defined and IFD.QOS.code_point !=None %}
      QOS_REWRITE:
         RULE_NAME: {{IFD.QOS.name}}
@@ -154,10 +170,18 @@ OVERLAY_NW:
      PHY_IF: {% for IF in INTF.phy_if %}{% if IF.parent==inventory_hostname %}{{IF.IFD}} {% endif %}{% endfor %}
 {% for IFD in north_if %} 
 {% if INTF.vlan_id == IFD.vlan_id %}
+{% if IFD.phy_if is defined %}{% for PARENT in IFD.phy_if %}{% if PARENT.parent==inventory_hostname %}
+     IP: {{PARENT.local_ip}}
+     NBR: {{PARENT.peer_ip | ipaddr('address')}}
+     LoCAL_AS: {{PARENT.local_as}}
+     PEER_AS: {{PARENT.peer_as}}
+{% endif %}{% endfor %}
+{% else %}
      IP: {{IFD.local_ip}}
      NBR: {{IFD.peer_ip | ipaddr('address')}}
      LoCAL_AS: {{IFD.local_as}}
      PEER_AS: {{IFD.peer_as}}
+{% endif %}
 {% if IFD.QOS is defined and IFD.QOS.code_point !=None %}
      QOS_REWRITE:
         RULE_NAME: {{IFD.QOS.name}}
@@ -185,10 +209,18 @@ OVERLAY_NW:
      PHY_IF: {% for IF in INTF.phy_if %}{% if IF.parent==inventory_hostname %}{{IF.IFD}} {% endif %}{% endfor %}
 {% for IFD in north_if %} 
 {% if INTF.vlan_id == IFD.vlan_id %}
+{% if IFD.phy_if is defined %}{% for PARENT in IFD.phy_if %}{% if PARENT.parent==inventory_hostname %}
+     IP: {{PARENT.local_ip}}
+     NBR: {{PARENT.peer_ip | ipaddr('address')}}
+     LoCAL_AS: {{PARENT.local_as}}
+     PEER_AS: {{PARENT.peer_as}}
+{% endif %}{% endfor %}
+{% else %}
      IP: {{IFD.local_ip}}
      NBR: {{IFD.peer_ip | ipaddr('address')}}
      LoCAL_AS: {{IFD.local_as}}
      PEER_AS: {{IFD.peer_as}}
+{% endif %}
 {% if IFD.QOS is defined and IFD.QOS.code_point !=None %}
      QOS_REWRITE:
         RULE_NAME: {{IFD.QOS.name}}
