@@ -16,7 +16,7 @@ In output file following list of items will be generated:-
 This role will accept north interfaces configured in 2 ways in the 'group_vars/all/tenants.yaml' file, it is possible to have 
 a mix of both styles:
 
-1) This results in the same IP address added in interfaces & BGP sessions upstream on the spines to e.g. to 21CN
+1) This results in the same IP address added in interfaces & BGP sessions upstream on the spines 
 north_if:
   - vlan_id: 2002
     local_ip: 10.255.1.0/31 
