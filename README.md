@@ -7,7 +7,7 @@ Fabric design and use cases are covered in design.ppt
 **python**: Python 2.7.5  
 **pip packages:**
 ansible: 2.8.6  
-**jinja2**: 2.10.3  
+jinja2: 2.10.3  
 
 Ansible user should be created and public keys should be configured on all devices  
 Complete packages list is available in hostRequirements.txt   
