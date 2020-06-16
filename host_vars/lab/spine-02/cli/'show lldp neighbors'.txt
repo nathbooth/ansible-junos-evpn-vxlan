@@ -1,6 +1,0 @@
-
-Local Interface    Parent Interface    Chassis Id          Port info          System Name
-xe-0/0/0           -                   02:05:86:71:4c:00    * to spine-02     spine-01            
-xe-0/0/1           -                   02:05:86:71:4c:00    * to spine-02     spine-01            
-xe-0/0/2           -                   02:05:86:71:5f:00    * to spine-02     leaf-01             
-xe-0/0/3           -                   02:05:86:71:e2:00    * to spine-02     leaf-02             

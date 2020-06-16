@@ -1,7 +1,0 @@
-
-Policy __vrf-import-__default_evpn__-internal__:
-    Term unnamed:
-        from community __vrf-community-__default_evpn__-import-internal__ []
-        then accept
-    Term unnamed:
-        then reject
