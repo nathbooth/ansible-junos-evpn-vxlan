@@ -1,6 +1,0 @@
-
-Logical System Name       Id  SVTEP-IP         IFL   L3-Idx    SVTEP Mode
-<default>                 0   172.1.1.2        lo0.0    0  
-    L2-RTT                   Bridge Domain              VNID     MC-Group-IP
-    default-switch           sriov_1001+1001            1001     0.0.0.0        
-    default-switch           sriov_1003+1003            1003     0.0.0.0        

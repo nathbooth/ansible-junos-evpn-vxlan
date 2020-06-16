@@ -1,8 +1,0 @@
-
-Instance: default-switch
-  Number of ethernet segments: 5
-    ESI: 00:01:11:12:27:00:00:00:00:01
-    ESI: 00:01:11:12:27:00:00:00:00:02
-    ESI: 05:00:00:fe:1a:00:00:03:e9:00
-    ESI: 05:00:00:fe:1a:00:00:03:ea:00
-    ESI: 05:00:00:fe:1a:00:00:03:eb:00
